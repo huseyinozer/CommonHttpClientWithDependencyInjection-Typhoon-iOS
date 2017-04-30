@@ -1,4 +1,4 @@
-# Sample Http Client With Dependency Injection
+# Common Http Client for iOS and Android Platforms With Dependency Injection
 
 I want common structure for android and ios platforms.
 This repository is an ios project.
@@ -159,7 +159,7 @@ httpClient.get("5904e13e10000015194f671f", result -> {
 });
 ```
 
-### Screenshots in project
+### Screenshots
 
 ![alt text](ios.png "iOs Project") ![alt text](android.png "Android Project")
 
