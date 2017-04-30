@@ -5,6 +5,8 @@ This repository is an ios project.
 I have used [Typhoon](https://github.com/appsquickly/Typhoon) library for dependency injection in this repository.
 I like Typhoon.
 
+Android Project : https://github.com/huseyinozer/CommonHttpClientWithDependencyInjection-Dagger2-Android
+
 All right, show me code.
 
 ## Declaring Http Client Interface
