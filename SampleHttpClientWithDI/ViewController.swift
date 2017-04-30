@@ -9,17 +9,45 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var messageLabel: UILabel!
+    
+    // Injected HttpClient
+    var httpClient : HttpClient!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func onClickSuccessRequest(_ sender: Any) {
+        
+        // Success request
+        httpClient.get(path: "5904e13e10000015194f671f", onSuccess: { (result) in
+            
+            self.messageLabel.text = "Response : \(result ?? "")"
+            
+        }, onError: { (statusCode, errorMessage, error) in
+            
+            self.messageLabel.text = "StatusCode : \(statusCode) \nError Message : \(errorMessage ?? "")"
+        })
+    }
+    
+    @IBAction func onClickErrorRequest(_ sender: Any) {
+        
+        // Bad request
+        httpClient.get(path: "5904e985100000a0194f6728", onSuccess: { (result) in
+            
+            self.messageLabel.text = "Response : \(result ?? "")"
+            
+        }) { (statusCode, errorMessage, error) in
+            
+            self.messageLabel.text = "StatusCode : \(statusCode) \nError Message : \(errorMessage ?? "")"
+        }
+    }
+    
 }
 

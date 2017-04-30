@@ -12,9 +12,17 @@
 		B0111D2C1EB50B2800482980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0111D2A1EB50B2800482980 /* Main.storyboard */; };
 		B0111D2E1EB50B2900482980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0111D2D1EB50B2900482980 /* Assets.xcassets */; };
 		B0111D311EB50B2A00482980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0111D2F1EB50B2A00482980 /* LaunchScreen.storyboard */; };
+		B0111D3B1EB50D4400482980 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0111D3A1EB50D4400482980 /* HttpClient.swift */; };
+		B0111D3F1EB50F7700482980 /* DefaultHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0111D3E1EB50F7700482980 /* DefaultHttpClient.swift */; };
+		B089E1081EB5151F00856687 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B089E1071EB5151F00856687 /* Alamofire.framework */; };
+		B089E10A1EB52CE400856687 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B089E1091EB52CE400856687 /* AppAssembly.swift */; };
+		B089E10C1EB52CFC00856687 /* Typhoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B089E10B1EB52CFC00856687 /* Typhoon.framework */; };
+		E1EA42E3C44A3C6B41C2A771 /* Pods_SampleHttpClientWithDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F38FBACD588F7C8DB8548E79 /* Pods_SampleHttpClientWithDI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8388F1DA9B7AAA40E6A44616 /* Pods-SampleHttpClientWithDI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleHttpClientWithDI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleHttpClientWithDI/Pods-SampleHttpClientWithDI.debug.xcconfig"; sourceTree = "<group>"; };
+		94413C0333156D29A7F40223 /* Pods-SampleHttpClientWithDI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleHttpClientWithDI.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleHttpClientWithDI/Pods-SampleHttpClientWithDI.release.xcconfig"; sourceTree = "<group>"; };
 		B0111D231EB50B2400482980 /* SampleHttpClientWithDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleHttpClientWithDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0111D261EB50B2500482980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0111D281EB50B2600482980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,12 @@
 		B0111D2D1EB50B2900482980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0111D301EB50B2A00482980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B0111D321EB50B2C00482980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0111D3A1EB50D4400482980 /* HttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		B0111D3E1EB50F7700482980 /* DefaultHttpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultHttpClient.swift; sourceTree = "<group>"; };
+		B089E1071EB5151F00856687 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/SampleHttpClientWithDI-bnoxrwmjvagibhcnhepjfeocrolg/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		B089E1091EB52CE400856687 /* AppAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		B089E10B1EB52CFC00856687 /* Typhoon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Typhoon.framework; path = "Pods/../build/Debug-iphoneos/Typhoon/Typhoon.framework"; sourceTree = "<group>"; };
+		F38FBACD588F7C8DB8548E79 /* Pods_SampleHttpClientWithDI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleHttpClientWithDI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B089E10C1EB52CFC00856687 /* Typhoon.framework in Frameworks */,
+				B089E1081EB5151F00856687 /* Alamofire.framework in Frameworks */,
+				E1EA42E3C44A3C6B41C2A771 /* Pods_SampleHttpClientWithDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4351C3EB3D5E7CB1B167EB0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B089E10B1EB52CFC00856687 /* Typhoon.framework */,
+				B089E1071EB5151F00856687 /* Alamofire.framework */,
+				F38FBACD588F7C8DB8548E79 /* Pods_SampleHttpClientWithDI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B0111D1A1EB50B0900482980 = {
 			isa = PBXGroup;
 			children = (
 				B0111D251EB50B2400482980 /* SampleHttpClientWithDI */,
 				B0111D241EB50B2400482980 /* Products */,
+				B7CA9C642E38925EB0A7EE7C /* Pods */,
+				4351C3EB3D5E7CB1B167EB0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +83,8 @@
 		B0111D251EB50B2400482980 /* SampleHttpClientWithDI */ = {
 			isa = PBXGroup;
 			children = (
+				B0111D391EB50D3800482980 /* Networking */,
+				B089E1091EB52CE400856687 /* AppAssembly.swift */,
 				B0111D261EB50B2500482980 /* AppDelegate.swift */,
 				B0111D281EB50B2600482980 /* ViewController.swift */,
 				B0111D2A1EB50B2800482980 /* Main.storyboard */,
@@ -64,6 +95,24 @@
 			path = SampleHttpClientWithDI;
 			sourceTree = "<group>";
 		};
+		B0111D391EB50D3800482980 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B0111D3A1EB50D4400482980 /* HttpClient.swift */,
+				B0111D3E1EB50F7700482980 /* DefaultHttpClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B7CA9C642E38925EB0A7EE7C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8388F1DA9B7AAA40E6A44616 /* Pods-SampleHttpClientWithDI.debug.xcconfig */,
+				94413C0333156D29A7F40223 /* Pods-SampleHttpClientWithDI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +120,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0111D351EB50B2E00482980 /* Build configuration list for PBXNativeTarget "SampleHttpClientWithDI" */;
 			buildPhases = (
+				C885E4F377174E052FC6C8AC /* [CP] Check Pods Manifest.lock */,
 				B0111D1F1EB50B0C00482980 /* Sources */,
 				B0111D201EB50B0C00482980 /* Frameworks */,
 				B0111D211EB50B0C00482980 /* Resources */,
+				D10C67C683C2C895EB2B2577 /* [CP] Embed Pods Frameworks */,
+				76A529083CE528444D54159D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +184,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76A529083CE528444D54159D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleHttpClientWithDI/Pods-SampleHttpClientWithDI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C885E4F377174E052FC6C8AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D10C67C683C2C895EB2B2577 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SampleHttpClientWithDI/Pods-SampleHttpClientWithDI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B0111D1F1EB50B0C00482980 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B0111D291EB50B2600482980 /* ViewController.swift in Sources */,
+				B0111D3B1EB50D4400482980 /* HttpClient.swift in Sources */,
+				B089E10A1EB52CE400856687 /* AppAssembly.swift in Sources */,
+				B0111D3F1EB50F7700482980 /* DefaultHttpClient.swift in Sources */,
 				B0111D271EB50B2500482980 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,9 +360,14 @@
 		};
 		B0111D361EB50B2E00482980 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8388F1DA9B7AAA40E6A44616 /* Pods-SampleHttpClientWithDI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P27PG5F7JJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Typhoon",
+				);
 				INFOPLIST_FILE = SampleHttpClientWithDI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.huseyinozer.SampleHttpClientWithDI;
@@ -270,9 +378,14 @@
 		};
 		B0111D371EB50B2E00482980 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94413C0333156D29A7F40223 /* Pods-SampleHttpClientWithDI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P27PG5F7JJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Typhoon",
+				);
 				INFOPLIST_FILE = SampleHttpClientWithDI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.huseyinozer.SampleHttpClientWithDI;
@@ -300,6 +413,7 @@
 				B0111D371EB50B2E00482980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
